@@ -66,12 +66,21 @@ function HomePortfolio() {
                         <span className="text-[11px]">{item.jop}</span>
                       </div>
                     </div>
-                    <button
-                      onClick={() => handleVisible(item)}
-                      className="text-[10px] px-3"
-                    >
-                      See detail
-                    </button>
+                    <div className="flex flex-col gap-2">
+                      <button
+                        onClick={() => handleVisible(item)}
+                        className="text-[10px] px-3"
+                      >
+                        See detail
+                      </button>
+                      <a
+                        href={item.demo}
+                        target="_blank"
+                        className="text-[10px] px-3"
+                      >
+                        Demo
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
