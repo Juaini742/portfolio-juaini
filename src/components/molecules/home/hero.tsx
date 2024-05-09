@@ -56,20 +56,22 @@ function HomeHero() {
           />
         </motion.div>
 
-        <motion.div
+        <motion.a
           ref={ref1}
           initial="hidden"
           animate={inView1 ? "visible" : "hidden"}
           variants={animateOpacity}
           transition={{ duration: 2 }}
           className="w-full md:w-[550px]"
+          href="../pdf/Juaini-Curriculum Vitae.pdf"
+          download
         >
           <Button
             className="w-full md:w-[550px] uppercase py-8 mt-5"
             text="Download curriculum vitae"
             style={{ letterSpacing: "1px" }}
           />
-        </motion.div>
+        </motion.a>
 
         <motion.h1
           ref={ref1}
