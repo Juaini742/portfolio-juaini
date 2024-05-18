@@ -36,7 +36,7 @@ function HomePortfolio() {
               custom={index}
               className="border border-white overflow-hidden shadow-md shadow-slate-500 group"
             >
-              <div className="w-full overflow-hidden group-hover:scale-110 trans-300">
+              <div className="w-full h-[220px] flex items-end overflow-hidden group-hover:scale-110 trans-300">
                 <img src={item.img} alt={item.title} />
               </div>
               <div className="bg-black text-white p-3">
